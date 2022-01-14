@@ -1,5 +1,5 @@
 #' Download, merge, and wrangle municipality-level election data
-#' 2017 House of Representatives Election in Japan
+#' 2021 House of Representatives Election in Japan
 #' Step 2: Read and wrangle files
 
 # Initial settings --------------------------------------------------------
@@ -115,4 +115,6 @@ for (i in 1:47){
 write_rds(smd_data, "output/smd_data.rds")
 write_rds(pr_data, "output/pr_data.rds")
 
+write_excel_csv(smd_data, "output/smd_data.csv")
+write_excel_csv(pr_data, "output/pr_data.csv")
 

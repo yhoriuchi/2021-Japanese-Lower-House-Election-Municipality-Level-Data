@@ -1,5 +1,5 @@
 #' Download, merge, and wrangle municipality-level election data
-#' 2017 House of Representatives Election in Japan
+#' 2021 House of Representatives Election in Japan
 #' Step 1: Download files
 
 # Initial settings --------------------------------------------------------
@@ -19,7 +19,7 @@ for (i in 1:47){
     pref_num <- as.character(i)
   }
 
-  url <- paste0("https://www.soumu.go.jp/senkyo/senkyo_s/data/shugiin48/shikuchouson_", pref_num, ".html")
+  url <- paste0("https://www.soumu.go.jp/senkyo/senkyo_s/data/shugiin49/shikuchouson_", pref_num, ".html")
   
   html <- read_html(url) %>% 
     as.character()

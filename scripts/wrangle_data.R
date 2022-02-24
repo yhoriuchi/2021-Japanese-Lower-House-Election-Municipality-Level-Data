@@ -84,7 +84,7 @@ read_data <- function(.file, .type){
       filter(!is.na(votes) & !is.na(parties)) %>% 
       mutate(votes = as.numeric(votes),
              file = .file, 
-             district = districts[i])
+             district = districts[1])
     
     return(out)
     
